@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control del Navegador por Voz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Control del Navegador por Voz</a>
+  </nav>
+
+  <div class="container mt-4">
+    <h1 class="text-center">Controla tu Navegador por Voz</h1>
+    <p class="text-center">Haz clic en el botón y habla para controlar el navegador.</p>
+    <button id="startBtn" class="btn btn-primary btn-lg btn-block">Comenzar Control por Voz</button>
+    <div id="result" class="mt-4"></div>
+    <div id="documentacion" class="mt-4">
+      <h2>Documentación</h2>
+      <ul>
+        <li><strong>Abrir una nueva pestaña:</strong> "Abrir nueva pestaña".</li>
+        <li><strong>Ir a una página específica:</strong> "Ir a [URL de la página]".</li>
+        <li><strong>Modificar el tamaño de la ventana del navegador:</strong> "Modificar tamaño ventana [ancho] por [alto]".</li>
+        <li><strong>Cerrar una pestaña:</strong> "Cerrar pestaña".</li>
+        <li><strong>Cerrar el navegador:</strong> "Cerrar navegador".</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">Todos los derechos reservados &copy; 2024</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
