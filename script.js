@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Función para almacenar la orden en MockAPI.io
   function almacenarOrden(orden) {
     // URL de la API de MockAPI.io donde almacenar la orden
-    const apiUrl = 'https://mockapi.io/api/<tu-id>/ordenes';
+    const apiUrl = 'https://661384ea53b0d5d80f678f83.mockapi.io/comandos';
 
     // Datos de la orden a enviar
     const data = {
