@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const startBtn = document.getElementById('startBtn');
   const resultDiv = document.getElementById('result');
 
   // Crear un nuevo objeto de reconocimiento de voz
@@ -6,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Establecer opciones
   recognition.lang = 'es-ES'; // Idioma español
-  recognition.continuous = true; // Continuar escuchando constantemente
+  recognition.continuous = false; // No continuar después de la pausa del hablante
 
   // Cuando se detecta un resultado
   recognition.onresult = function (event) {
-    // Obtener el último resultado del reconocimiento
-    const transcript = event.results[event.results.length - 1][0].transcript;
+    // Obtener el texto reconocido
+    const transcript = event.results[0][0].transcript;
 
     // Mostrar el texto reconocido en el resultado
     resultDiv.innerHTML = `<p>Comando reconocido: <strong>${transcript}</strong></p>`;
@@ -19,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Ejecutar la acción correspondiente al comando reconocido
     ejecutarComando(transcript);
   };
+
+  // Manejador de clic del botón de inicio
+  startBtn.addEventListener('click', function () {
+    // Iniciar el reconocimiento de voz
+    recognition.start();
+  });
 
   // Función para ejecutar comandos según el texto reconocido
   function ejecutarComando(transcript) {
@@ -90,7 +97,4 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(data => console.log('Orden almacenada:', data))
       .catch(error => console.error('Error al almacenar la orden:', error));
   }
-  
-  // Iniciar el reconocimiento de voz al cargar la página
-  recognition.start();
 });
