@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Órdenes</title>
+    <!-- Agrega la CDN de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Agrega tu propio CSS personalizado si es necesario -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Encabezado con Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Aplicación de Órdenes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <!-- Agrega más enlaces de navegación si es necesario -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenido principal de la página -->
+        <div class="container mt-4">
+            <h1>Bienvenido a la Aplicación de Órdenes</h1>
+            <p>Este es el ambiente de lectura de órdenes.</p>
+            <!-- Sección para mostrar la última orden -->
+            <div id="lastOrderSection" class="mt-4">
+                <h2>Última Orden</h2>
+                <p id="lastOrderText">Cargando...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <!-- Pie de página -->
+        <div class="container">
+            <p>&copy; 2024 Aplicación de Órdenes</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-PV/AkFOwhHln7eKyU5fWf4fWczdKME4zhL1gd9gfE5M48iJqgmj7LgtPKKd1L6k4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-Ygb6X5pI/JFYO/9ynD2agEJoc/h4R/wQrLOeDBag3Y1cLE+8g1ueC2t8q4vBz/8H" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
